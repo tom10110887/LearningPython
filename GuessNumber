@@ -1,0 +1,24 @@
+#二分法查找数字，这个排错过程可以优化
+
+try:
+    set_number = int(input("Give me a number\n"))
+except:
+    print("Make sure you give me a number")
+    
+start_number = 0
+
+end_number = 10000000000000000000000000000
+
+guess_number = int((start_number + end_number)/2)
+
+while guess_number != set_number:
+    if guess_number < set_number:
+        start_number = guess_number
+        guess_number = int((start_number+end_number)/2)
+    elif guess_number > set_number:
+        end_number = guess_number
+        guess_number = int((start_number+end_number)/2)
+    else:
+        print("Found it, it is %d, right?"%(guess_number))
+        
+print("Found it, it is %d, right?"%(guess_number))
