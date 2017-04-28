@@ -1,4 +1,0 @@
-dataframe中循环操作需要用到dataframe.iloc[[],[]]
-dataframe rows count -> len(dataframe.index)
-dataframe columns count -> len(dataframe.columns)
-对于dataframe中boolean值的判断操作，需要用到numpy库中的numpy.logical_and/or/not来进行，而不能用内置的and/or/not
